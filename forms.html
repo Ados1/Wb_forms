@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Astra Registration form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="" />
+  </head>
+  <body>
+    <section class="section">
+      <h2>ASTRA FORM</h2>
+      <p>
+        Please fill the form for us to consider you for a vacation in our
+        resort.
+      </p>
+      <p>Fields marked <span class="asterisk">*</span>are required</p>
+
+      <form>
+        <label for="fullname">Full Name <span class="asterisk">*</span></label>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="Enter your Full Name"
+        /><br />
+
+        <label for="email">Email Address <span class="asterisk">*</span></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your Email Address"
+        /><br />
+
+        <label for="password">Password<span class="asterisk">*</span> </label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+        />
+        <br />
+
+        <label for="confirm password"
+          >Confirm Password <span class="asterisk">*</span></label
+        >
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Confirm Password"
+        /><br />
+
+        <label for="dob">Date Of Birth<span class="asterisk">*</span> </label>
+        <input type="date" id="dob" name="dob" max="2023-05-01" /><br />
+        <div class="gender">
+          <p>Gender:</p>
+          <label for="man">Man</label>
+          <input type="radio" id="man" name="gender" value="Man" /><br />
+
+          <label for="woman">Woman</label>
+          <input type="radio" id="woman" name="gender" value="Woman" /><br />
+
+          <label for="other">Other</label>
+          <input type="radio" id="other" name="gender" value="Other" /><br />
+        </div>
+        <label for="country">Country <span class="asterisk">*</span></label>
+        <select id="country" name="country">
+          <option>Select Country</option>
+          <option>Germany</option>
+          <option>Ghana</option>
+          <option>Hungary</option>
+          <option>India</option>
+          <option>Ireland</option>
+          <option>Kuwait</option>
+          <option>Senegal</option>
+          <option>Turkey</option>
+          <option>United Kingdom</option>
+          <option>United States</option></select
+        ><br />
+
+        <div class="check">
+          <p>I agree to all terms and conditions</p>
+          <input type="checkbox" name="checkbox" />
+        </div>
+
+        <label for="message">Message</label>
+        <textarea placeholder="Leave a message"></textarea>
+        <input type="submit" value="SUBMIT" class="btn" />
+      </form>
+    </section>
+  </body>
+</html>
